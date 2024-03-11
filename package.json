@@ -1,0 +1,24 @@
+{
+  "name": "team-cyg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lautarocuesta/team-cyg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lautarocuesta/team-cyg/issues"
+  },
+  "homepage": "https://github.com/Lautarocuesta/team-cyg#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3"
+  }
+}
