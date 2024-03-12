@@ -29,10 +29,10 @@
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
-      color: white;
+      color: rgb(19, 18, 18);
       font-size: 18px;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
     }
 
     .heavy-container:hover .minigun-text {
@@ -48,17 +48,13 @@
     }
 
     /* Estilos para el texto sobre el vídeo de fondo */
-    .video-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 24px;
-    }
+    .video-text:hover .minigun-text {
+  visibility: visible;
+}
+
 
     /* Estilos para el cuadro de información */
-    .info-box {
+    .info-box {  /*caja de minigun pop up */
       position: relative;
       display: inline-block;
     }
@@ -75,7 +71,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 200px;
-      background-color: #f9f9f9;
+      background-color: #e29522;
       border: 1px solid #ccc;
       border-radius: 5px;
       padding: 5px;
@@ -90,19 +86,21 @@
     <div class="heavy-container">
       <img src="heavy.jpg" alt="Heavy de Team Fortress 2" class="heavy-image">
       <!-- Texto "Minigun" -->
-      <p class="minigun-text">Minigun</p>
+      <div class="video-text">
+        <!-- Párrafo que permanece oculto hasta que se pasa el mouse sobre él -->
+        <p class="minigun-text" style="visibility: hidden;">Minigun</p>
+        <!-- Texto sobre el vídeo de fondo -->
+        <p>¡<span class="info-box">Minigun<span class="info-text">Una Minigun es un tipo de ametralladora que dispara balas a alta velocidad. En Team Fortress 2, la Minigun es el arma principal del Heavy.</span></span></p>
+      </div>
     </div>
     <div class="video-background">
       <!-- Vídeo de fondo (puedes cambiar el vídeo) -->
       <video autoplay muted loop style="width: 100%; height: 100%;">
         <source src="https://www.youtube.com/watch?v=OwYmXG3DYs4" type="video/mp4">
       </video>
-      <!-- Texto sobre el vídeo de fondo -->
-      <div class="video-text">
-        <p>¡<span class="info-box">Minigun<span class="info-text">Una Minigun es un tipo de ametralladora que dispara balas a alta velocidad. En Team Fortress 2, la Minigun es el arma principal del Heavy.</span></span></p>
-      </div>
     </div>
     <p>El Heavy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
   </div>
+  
 </body>
 </html>
