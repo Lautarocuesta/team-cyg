@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heavy de Team Fortress 2</title>
+  <style>
+    /* Estilos para el contenedor principal */
+    .container {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Estilos para la imagen del Heavy */
+    .heavy-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .heavy-image {
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    /* Estilos para el texto "Minigun" */
+    .minigun-text {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .heavy-container:hover .minigun-text {
+      opacity: 1;
+    }
+
+    /* Estilos para el vídeo de fondo */
+    .video-background {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Estilos para el texto sobre el vídeo de fondo */
+    .video-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Estilos para el cuadro de información */
+    .info-box {
+      position: relative;
+      display: inline-block;
+    }
+
+    .info-box:hover .info-text {
+      visibility: visible;
+    }
+
+    .info-text {
+      visibility: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Heavy de Team Fortress 2</h1>
+    <!-- Contenedor para la imagen del Heavy -->
+    <div class="heavy-container">
+      <img src="heavy.jpg" alt="Heavy de Team Fortress 2" class="heavy-image">
+      <!-- Texto "Minigun" -->
+      <p class="minigun-text">Minigun</p>
+    </div>
+    <div class="video-background">
+      <!-- Vídeo de fondo (puedes cambiar el vídeo) -->
+      <video autoplay muted loop style="width: 100%; height: 100%;">
+        <source src="https://www.youtube.com/watch?v=OwYmXG3DYs4" type="video/mp4">
+      </video>
+      <!-- Texto sobre el vídeo de fondo -->
+      <div class="video-text">
+        <p>¡<span class="info-box">Minigun<span class="info-text">Una Minigun es un tipo de ametralladora que dispara balas a alta velocidad. En Team Fortress 2, la Minigun es el arma principal del Heavy.</span></span></p>
+      </div>
+    </div>
+    <p>El Heavy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+  </div>
+</body>
+</html>
