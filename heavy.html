@@ -1,117 +1,73 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heavy de Team Fortress 2</title>
-  <style>
-    /* Estilos para el contenedor principal */
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy de Team Fortress 2</title>
+    <style>
+      
+      .container {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+     
+      .heavy-container {
+        position: relative;
+        display: inline-block;
+      }
+      .heavy-image {
+        width: 50%;
+        border-radius: 10px;
+      }
+      
+      .minigun-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(19, 18, 18);
+        font-size: 10px; 
+        opacity: 0;
+        text-align: center;
+        padding: 5px;
+        text-align: center;
+        max-width: 200px;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        transition: opacity 0.35s ease-in-out;
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    /* Estilos para la imagen del Heavy */
-    .heavy-container {
-      position: relative;
-    }
-
-    .heavy-image {
-      width: 100%; /* Tamaño de la imagen ajustado al contenedor */
-      max-width: 600px; /* Ancho máximo de la imagen */
-      border-radius: 10px;
-    }
-
-    .sandw-image {
-      width: 100%; /* Tamaño de la imagen ajustado al contenedor */
-      max-width: 600px; /* Ancho máximo de la imagen */
-      border-radius: 10px;
-    }
-
-    /* Estilos para el texto "Minigun" */
-    .minigun-text {
-      position: absolute;
-      bottom: 10px; /* Ajustando la posición de la palabra "Minigun" */
-      left: 50%;
-      transform: translateX(-50%);
-      color: rgb(19, 18, 18);
-      font-size: 18px;
-      visibility: hidden;
-      transition: visibility 0.35s ease-in-out;
-    }
-
-    .heavy-container:hover .minigun-text {
-      visibility: visible;
-    }
-
-    /* Estilos para el cuadro de información */
-    .info-box {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .info-box:hover .info-text {
-      visibility: visible;
-    }
-
-    .info-text {
-      visibility: hidden;
-      z-index: 1;
-      width: 200px;
-      background-color: #e29522;
-      border: 1px solid #ccc;
+        
+        margin-top: -15px;
+        margin-bottom: -15px;
+      }
+      .minigun-text:hover {
+        opacity: 1;
+      }
+      .minigun-text span {
+        border: 1px solid #000;
+      padding: 3px; 
       border-radius: 5px;
-      padding: 5px;
-      text-align: left;
-    }
-
-    /* Estilos para el vídeo de fondo */
-    .video-background {
-      width: 100%;
-      max-width: 600px; /* Ancho máximo del video */
-      height: 400px;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 20px; /* Espacio entre la imagen y el video */
-    }
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Heavy de Team Fortress 2</h1>
-    <!-- Contenedor para la imagen del Heavy -->
-    <div class="heavy-container">
-      <img src="heavy.jpg" alt="Heavy de Team Fortress 2" class="heavy-image">
-      <img src="sandw.jpg" alt="sandw de Team Fortress 2" class="sandw-image">
-      <!-- Texto "Minigun" -->
-      <p class="minigun-text">Minigun</p>
-      <!-- Texto sobre la imagen del sandwich -->
-      <div class="info-box">
-        <p><span class="info-text">Un Sandvich es un elemento de recuperación que el Heavy puede consumir para restaurar su salud. Es uno de los elementos más icónicos del juego.</span></p>
+      background-color: #e29522;
+      font-size: 8px;
+      display: block; 
+      max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Heavy de Team Fortress 2</h1>
+     
+      <div class="heavy-container">
+        <img src="heavy.jpg" alt="Heavy de Team Fortress 2" class="heavy-image">
+        <div class="minigun-text">
+          <p>Minigun</p>
+          <span>sdgakjfdngoijoidgoaidiouafgaiuhiguivdrfayusfosudfpuiSDGFIOPhsdfuigOISDFHGIO vgfoiuGSUIFHsougfoFiopusgfyusDFIOgsdfuosodfuiboUSVF0UsdfugSDBVU9I</span>
+        </div>
       </div>
-      <!-- Texto sobre el vídeo de fondo -->
-      <div class="info-box">
-        <p><span class="info-text">Una Minigun es un tipo de ametralladora que dispara balas a alta velocidad. En Team Fortress 2, la Minigun es el arma principal del Heavy.</span></p>
-      </div>
+      <p>El Heavy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
     </div>
-    <div class="video-background">
-      <!-- Vídeo de fondo (puedes cambiar el vídeo) -->
-      <video autoplay muted loop style="width: 100%; height: 100%;">
-        <source src="https://www.youtube.com/watch?v=OwYmXG3DYs4" type="video/mp4">
-      </video>
-    </div>
-    <p>El Heavy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
-  </div>
-</body>
-</html>
+
+  </body>
+  </html>
