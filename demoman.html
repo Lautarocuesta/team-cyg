@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heavy de Team Fortress 2</title>
+  <title>Demoman de Team Fortress 2</title>
   <style>
-     h1 {
+    h1 {
       font-family: 'Roboto', sans-serif;
       font-size: 36px;
-      color: #e29522;
+      color: #ffd700; /* Color dorado para el texto */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     body {
-  background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
-}
-
+      background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+    }
     .container {
       width: 80%;
       margin: auto;
       text-align: center;
     }
    
-    .heavy-container {
+    .demoman-container {
       position: relative;
       display: inline-block;
       opacity: 0; /* Ocultar el div principal por defecto */
@@ -29,17 +28,17 @@
     }
 
     /* Revelar el div principal al pasar el mouse sobre él */
-    .container:hover .heavy-container {
+    .container:hover .demoman-container {
       opacity: 1;
     }
 
-    .heavy-image {
+    .demoman-image {
       width: 50%;
       border-radius: 10px;
     }
 
-    /* Estilo para la imagen del sandwich */
-    .sandw-image {
+    /* Estilo para la imagen del stickybomb launcher */
+    .stickybomb-image {
       width: 20px; /* Tamaño muy pequeño */
       border-radius: 10px;
       position: absolute;
@@ -49,12 +48,12 @@
       opacity: 0; /* Hacer invisible por defecto */
     }
 
-    /* Mostrar el sandwich al pasar el mouse sobre él */
-    .sandw-image:hover {
+    /* Mostrar el stickybomb launcher al pasar el mouse sobre él */
+    .stickybomb-image:hover {
       opacity: 1;
     }
 
-    .minigun-text {
+    .demoman-stickybomb-text {
       position: absolute;
       bottom: 10px;
       left: 50%;
@@ -73,22 +72,22 @@
       margin-top: -15px;
       margin-bottom: -15px;
     }
-    .minigun-text p {
-  color: white; /* Color blanco para el texto */
-  font-family: 'Arial', sans-serif; /* Cambia la tipografía a una de tu elección */
-  font-size: 10px; /* Ajusta el tamaño del texto según sea necesario */
-}
 
-
-    .heavy-container:hover .minigun-text {
+    .demoman-container:hover .demoman-stickybomb-text {
       opacity: 1;
     }
 
-    .minigun-text span {
+    .demoman-stickybomb-text p {
+      color: white; /* Color blanco para el texto */
+      font-family: 'Arial', sans-serif; /* Cambia la tipografía a una de tu elección */
+      font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    }
+
+    .demoman-stickybomb-text span {
       border: 1px solid #000;
       padding: 3px; 
       border-radius: 5px;
-      background-color: #e29522;
+      background-color: #ffd700; /* Color dorado */
       font-size: 8px;
       display: block; 
       max-width: 100%;
@@ -97,17 +96,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>Heavy de Team Fortress 2</h1>
+    <h1>Demoman de Team Fortress 2</h1>
    
-    <div class="heavy-container">
-      <img src="heavy4k..png" alt="Heavy de Team Fortress 2" class="heavy-image"> <!-- Imagen del Heavy -->
-      <img src="sandw.png" alt="Sandwich de Team Fortress 2" class="sandw-image"> <!-- Imagen del sandwich -->
-      <div class="minigun-text">
-        <p>Minigun</p>
-        <span>sdgakjfdngoijoidgoaidiouafgaiuhiguivdrfayusfosudfpuiSDGFIOPhsdfuigOISDFHGIO vgfoiuGSUIFHsougfoFiopusgfyusDFIOgsdfuosodfuiboUSVF0UsdfugSDBVU9I</span>
+    <div class="demoman-container">
+      <img src="demoman.png" alt="Demoman de Team Fortress 2" class="demoman-image"> <!-- Imagen del Demoman -->
+     
+      <div class="demoman-stickybomb-text">
+        <p>Stickybomb Launcher</p>
+        <span>dgdfg</span>
       </div>
     </div>
-    <p>El Heavy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+    <p>El Demoman es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
   </div>
 
 </body>
