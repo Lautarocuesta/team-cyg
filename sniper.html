@@ -12,7 +12,9 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     body {
-      background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+      background-color: blue; /* Color de fondo azul */
+      margin: 0; /* Elimina los márgenes predeterminados */
+      padding: 0; /* Elimina el relleno predeterminado */
     }
     .container {
       width: 80%;
@@ -51,6 +53,13 @@
     /* Mostrar el rifle al pasar el mouse sobre él */
     .rifle-image:hover {
       opacity: 1;
+    }
+
+    .flag-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px; /* Ajusta el tamaño de la bandera según sea necesario */
     }
 
     .sniper-rifle-text {
@@ -100,7 +109,8 @@
    
     <div class="sniper-container">
       <img src="sniper.png" alt="Sniper de Team Fortress 2" class="sniper-image"> <!-- Imagen del Sniper -->
-      
+      <img src="nzflag.png" alt="Sniper de Team Fortress 2" class="flag-image"> <!-- Bandera de Nueva Zelanda -->
+    
       <div class="sniper-rifle-text">
         <p>Sniper Rifle</p>
         <span>dgdfg</span>

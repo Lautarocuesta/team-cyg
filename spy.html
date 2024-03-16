@@ -12,7 +12,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     body {
-      background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+      background: linear-gradient(135deg, #f3f4f5, #ebedee, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
     }
     .container {
       width: 80%;
@@ -53,6 +53,13 @@
       opacity: 1;
     }
 
+    .flag-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px; /* Ajusta el tamaño de la bandera según sea necesario */
+    }
+
     .spy-knife-text {
       position: absolute;
       bottom: 10px;
@@ -79,7 +86,7 @@
 
     .spy-knife-text p {
       color: white; /* Color blanco para el texto */
-      font-family: 'Arial', sans-serif; /* Cambia la tipografía a una de tu elección */
+      font-family: 'Dina', sans-serif; /* Cambia la tipografía a Dina */
       font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
     }
 
@@ -88,9 +95,15 @@
       padding: 3px; 
       border-radius: 5px;
       background-color: #ff0000; /* Color rojo */
+      font-family: 'Dina', sans-serif; /* Cambia la tipografía a Dina */
       font-size: 8px;
       display: block; 
       max-width: 100%;
+    }
+
+    /* Cambia el color de la palabra "Revolver" a negro */
+    .spy-knife-text p {
+      color: black;
     }
   </style>
 </head>
@@ -100,13 +113,14 @@
    
     <div class="spy-container">
       <img src="spy.png" alt="Spy de Team Fortress 2" class="spy-image"> <!-- Imagen del Spy -->
+      <img src="francia flag.png" alt="Bandera de Francia" class="flag-image"> <!-- Bandera de Francia -->
     
       <div class="spy-knife-text">
         <p>Revolver</p>
-        <span>dgdfg</span>
+        <span>Sirve para matar a enemigos</span>
       </div>
     </div>
-    <p>El Spy es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+    <p>El Spy es capaz de entrar en teleportadores enemigos y aprovechar esto a su ventaja para adentrarse en el equipo enemigo y camuflarse entre ellos para luego asesinarlos.</p>
   </div>
 
 </body>
