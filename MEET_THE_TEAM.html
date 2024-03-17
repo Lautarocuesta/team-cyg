@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demoman de Team Fortress 2</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .slider {
+      position: relative;
+      overflow: hidden;
+      margin: 20px 0;
+   
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 80%;
+      display: flex; 
+
+
+    }
+    .slide {
+      flex: 0 0 100%;
+      width: 10%;
+      
+    }
+  
+    .slide:hover img {
+      transform: scale(1.1); 
+      transition: transform 0.3s ease-in-out; 
+    }
+
+    .slide img {
+      max-width: 70%;
+      height: 70%;
+      transition: transform 0.5s ease-in-out; 
+    }
+    img {
+      max-width: 70%;
+      height: 70%;
+      style= transform: scale(1); 
+      transition: transform 0.3s ease-in-out 0s;
+    }
+    .controls {
+      margin-top: 10px; 
+    }
+    .control {
+      cursor: pointer;
+      margin: 0 10px;
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%); 
+    }
+    
+    .prev {
+      left: 4px; 
+    }
+
+    .next {
+     right: 4px; 
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Demoman de Team Fortress 2</h1>
+   
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="sniper.png" alt="Demoman de Team Fortress 2">
+          <p>fgfafhahaghagh</p>
+        </div>
+        <div class="slide">
+          <img src="heavy4k..png" alt="Demoman de Team Fortress 2">
+          <p>oidfgopafoafogafhklñaldf</p>
+        </div>
+        <div class="slide">
+          <img src="scout.png" alt="Demoman de Team Fortress 2">
+          <p>afhafhdfhadfhadfh</p>
+        </div>
+        <div class="slide">
+          <img src="pyro.png" alt="Demoman de Team Fortress 2">
+          <p>ahadfhadfhadfhadfha</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="controls">
+      <span class="control prev">&lt;</span>
+      <span class="control next">&gt;</span>
+    </div>
+    
+    
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const slider = document.querySelector('.slides');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let index = 0;
+
+    function updateSlide() {
+      slider.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlide();
+    }
+   
+    document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+  });
+
+
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+  </script>
+</body>
+</html>
