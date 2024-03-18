@@ -18,6 +18,7 @@
       width: 80%;
       margin: auto;
       text-align: center;
+      position: relative; /* Añade posición relativa para que los elementos absolutos se posicionen en relación con este contenedor */
     }
    
     .scout-container {
@@ -92,6 +93,13 @@
       display: block; 
       max-width: 100%;
     }
+
+    .flag-image {
+      width: 30px; /* Ajusta el tamaño de la bandera según sea necesario */
+      position: absolute;
+      top: 10px; /* Ajusta la posición vertical de la bandera */
+      right: 10px; /* Ajusta la posición horizontal de la bandera */
+    }
   </style>
 </head>
 <body>
@@ -100,13 +108,13 @@
    
     <div class="scout-container">
       <img src="scout.png" alt="Scout de Team Fortress 2" class="scout-image"> <!-- Imagen del Scout -->
-    
+      <img src="solflag.png" alt="Bandera del Soldier de Team Fortress 2" class="flag-image"> <!-- Imagen de la bandera -->
       <div class="scattergun-text">
-        <p>Scattergun</p>
-        <span>dgdfg</span>
+        <p>Bate</p>
+        <span>Bate es una clase ideal para peleas agresivas y flanqueo</span>
       </div>
     </div>
-    <p>El Scout es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+    <p>Es un luchador veloz con un bate de béisbol y una actitud sarcástica y directa.</p>
   </div>
 
 </body>

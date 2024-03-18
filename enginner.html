@@ -13,83 +13,74 @@
     }
     body {
       background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+      margin: 0; /* Elimina el margen predeterminado */
+      padding: 0; /* Elimina el relleno predeterminado */
     }
     .container {
       width: 80%;
       margin: auto;
       text-align: center;
+      position: relative; /* Establece posición relativa para que la bandera sea absoluta respecto a este contenedor */
     }
-   
     .engineer-container {
       position: relative;
       display: inline-block;
       opacity: 0; /* Ocultar el div principal por defecto */
       transition: opacity 0.35s ease-in-out; /* Transición suave para la opacidad */
     }
-
     /* Revelar el div principal al pasar el mouse sobre él */
     .container:hover .engineer-container {
       opacity: 1;
     }
-
     .engineer-image {
       width: 50%;
       border-radius: 10px;
     }
-
-    /* Estilo para la imagen del wrench */
-    .wrench-image {
-      width: 20px; /* Tamaño muy pequeño */
+    /* Estilo para la imagen de la bandera */
+    .flag-image {
+      width: 30px; /* Tamaño de la bandera */
       border-radius: 10px;
       position: absolute;
-      top: 50%; /* Posición centrada verticalmente */
-      left: 59%; /* Posición centrada horizontalmente */
-      transform: translate(-50%, -50%);
+      top: 10px; /* Distancia desde la parte superior */
+      right: 10px; /* Distancia desde la derecha */
       opacity: 0; /* Hacer invisible por defecto */
     }
-
-    /* Mostrar la llave al pasar el mouse sobre ella */
-    .wrench-image:hover {
+    /* Mostrar la bandera al pasar el mouse sobre ella */
+    .flag-image:hover {
       opacity: 1;
     }
-
     .engineer-wrench-text {
       position: absolute;
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
       color: rgb(19, 18, 18);
-      font-size: 10px; 
+      font-size: 10px;
       opacity: 0;
       text-align: center;
       padding: 5px;
-      text-align: center;
       max-width: 200px;
-      overflow: hidden; 
-      text-overflow: ellipsis; 
+      overflow: hidden;
+      text-overflow: ellipsis;
       transition: opacity 0.35s ease-in-out;
-
       margin-top: -15px;
       margin-bottom: -15px;
     }
-
     .engineer-container:hover .engineer-wrench-text {
       opacity: 1;
     }
-
     .engineer-wrench-text p {
       color: white; /* Color blanco para el texto */
       font-family: 'Arial', sans-serif; /* Cambia la tipografía a una de tu elección */
       font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
     }
-
     .engineer-wrench-text span {
       border: 1px solid #000;
-      padding: 3px; 
+      padding: 3px;
       border-radius: 5px;
       background-color: #ffd700; /* Color dorado */
       font-size: 8px;
-      display: block; 
+      display: block;
       max-width: 100%;
     }
   </style>
@@ -97,17 +88,15 @@
 <body>
   <div class="container">
     <h1>Engineer de Team Fortress 2</h1>
-   
     <div class="engineer-container">
       <img src="enginner.png" alt="Engineer de Team Fortress 2" class="engineer-image"> <!-- Imagen del Engineer -->
-     
+      <img src="solflag.png" alt="Bandera del Engineer de Team Fortress 2" class="flag-image"> <!-- Imagen de la bandera -->
       <div class="engineer-wrench-text">
         <p>Llave Inglesa</p>
-        <span>dgdfg</span>
+        <span>Sirve para poner su maquinaria con su llave</span>
       </div>
     </div>
-    <p>El Engineer es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+    <p>El Engineer es un tejano amigable, de habla suave, con una afición por todo lo mecánico. </p>
   </div>
-
 </body>
 </html>

@@ -3,119 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medic de Team Fortress 2</title>
+  <title>Demoman de Team Fortress 2</title>
   <style>
     h1 {
       font-family: 'Roboto', sans-serif;
       font-size: 36px;
-      color: whitesmoke; /* Color dorado para el texto */
+      color: violet; /* Color dorado para el texto */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     body {
       background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+      margin: 0; /* Elimina el margen predeterminado */
+      padding: 0; /* Elimina el relleno predeterminado */
     }
     .container {
       width: 80%;
       margin: auto;
       text-align: center;
-      position: relative; /* Añade posición relativa para que los elementos absolutos se posicionen en relación con este contenedor */
+      position: relative; /* Establece posición relativa para que la bandera sea absoluta respecto a este contenedor */
     }
-   
-    .medic-container {
+    .demoman-container {
       position: relative;
       display: inline-block;
       opacity: 0; /* Ocultar el div principal por defecto */
       transition: opacity 0.35s ease-in-out; /* Transición suave para la opacidad */
     }
-
     /* Revelar el div principal al pasar el mouse sobre él */
-    .container:hover .medic-container {
+    .container:hover .demoman-container {
       opacity: 1;
     }
-
-    .medic-image {
+    .demoman-image {
       width: 50%;
       border-radius: 10px;
     }
-
-    /* Estilo para la imagen del medigun */
-    .medigun-image {
-      width: 20px; /* Tamaño muy pequeño */
+    /* Estilo para la imagen de la bandera */
+    .flag-image {
+      width: 30px; /* Tamaño de la bandera */
       border-radius: 10px;
       position: absolute;
-      top: 50%; /* Posición centrada verticalmente */
-      left: 59%; /* Posición centrada horizontalmente */
-      transform: translate(-50%, -50%);
+      top: 10px; /* Distancia desde la parte superior */
+      right: 10px; /* Distancia desde la derecha */
       opacity: 0; /* Hacer invisible por defecto */
     }
-
-    /* Mostrar el medigun al pasar el mouse sobre él */
-    .medigun-image:hover {
+    /* Mostrar la bandera al pasar el mouse sobre ella */
+    .flag-image:hover {
       opacity: 1;
     }
-
-    .medic-medigun-text {
+    .demoman-bomb-text {
       position: absolute;
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
       color: rgb(19, 18, 18);
-      font-size: 10px; 
+      font-size: 10px;
       opacity: 0;
       text-align: center;
       padding: 5px;
-      text-align: center;
       max-width: 200px;
-      overflow: hidden; 
-      text-overflow: ellipsis; 
+      overflow: hidden;
+      text-overflow: ellipsis;
       transition: opacity 0.35s ease-in-out;
-
       margin-top: -15px;
       margin-bottom: -15px;
     }
-
-    .medic-container:hover .medic-medigun-text {
+    .demoman-container:hover .demoman-bomb-text {
       opacity: 1;
     }
-
-    .medic-medigun-text p {
+    .demoman-bomb-text p {
       color: white; /* Color blanco para el texto */
       font-family: 'Arial', sans-serif; /* Cambia la tipografía a una de tu elección */
       font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
     }
-
-    .medic-medigun-text span {
+    .demoman-bomb-text span {
       border: 1px solid #000;
-      padding: 3px; 
+      padding: 3px;
       border-radius: 5px;
       background-color: #ffd700; /* Color dorado */
       font-size: 8px;
-      display: block; 
+      display: block;
       max-width: 100%;
-    }
-
-    .flag-image {
-      width: 30px; /* Ajusta el tamaño de la bandera según sea necesario */
-      position: absolute;
-      top: 10px; /* Ajusta la posición vertical de la bandera */
-      right: 10px; /* Ajusta la posición horizontal de la bandera */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Medic de Team Fortress 2</h1>
-   
-    <div class="medic-container">
-      <img src="medic.png" alt="Medic de Team Fortress 2" class="medic-image"> <!-- Imagen del Medic -->
-      <img src="alemana.png" alt="Bandera del Medic de Team Fortress 2" class="flag-image"> <!-- Imagen de la bandera -->
-      <div class="medic-medigun-text">
-        <p>Medigun</p>
-        <span>Utiliza su Medigun sobre un aliado herido, le hará recuperar puntos de salud.</span>
+    <h1>Demoman de Team Fortress 2</h1>
+    <div class="demoman-container">
+      <img src="demoman.png" alt="Demoman de Team Fortress 2" class="demoman-image"> <!-- Imagen del Demoman -->
+      <img src="escosia.png" alt="Bandera del Demoman de Team Fortress 2" class="flag-image"> <!-- Imagen de la bandera -->
+      <div class="demoman-bomb-text">
+        <p>Bombas Pegajosas</p>
+        <span>Lanza bombas pegajosas para hacer explotar a los enemigos</span>
       </div>
     </div>
-    <p>El Medic es un hombre teutón con una ética médica un tanto cuestionable, </p>
+    <p>El Demoman es un experto en explosivos escocés con dos lanzadores y una selección de bombas especiales. </p>
   </div>
-
 </body>
 </html>

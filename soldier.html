@@ -18,6 +18,7 @@
       width: 80%;
       margin: auto;
       text-align: center;
+      position: relative; /* Agrega posición relativa al contenedor para posicionar la bandera */
     }
    
     .soldier-container {
@@ -92,6 +93,15 @@
       display: block; 
       max-width: 100%;
     }
+
+    /* Estilo para la imagen de la bandera */
+    .flag-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px; /* Ajusta el tamaño de la bandera según sea necesario */
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -100,13 +110,14 @@
    
     <div class="soldier-container">
       <img src="soldier.png" alt="Soldier de Team Fortress 2" class="soldier-image"> <!-- Imagen del Soldier -->
-     
+      <img src="solflag.png" alt="Bandera del Soldier de Team Fortress 2" class="flag-image"> <!-- Imagen de la bandera -->
       <div class="soldier-rocket-text">
         <p>Rocket Launcher</p>
-        <span>dgdfg</span>
+        <span>Puede detonar un cohete a sus pies y lanzarse hacia el cielo, y con su cohete se defiende </span>
       </div>
     </div>
-    <p>El Soldier es un personaje muy querido de Team Fortress 2. Aquí hay una imagen de él y un vídeo de fondo de uno de sus momentos icónicos.</p>
+    
+    <p>Duro y bien armado, es versátil, capaz tanto de ataque como de defensa, y una gran clase inicial para familiarizarse con el juego</p>
   </div>
 
 </body>

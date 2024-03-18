@@ -5,40 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heavy de Team Fortress 2</title>
   <style>
-     h1 {
+    h1 {
       font-family: 'Roboto', sans-serif;
       font-size: 36px;
       color: #e29522;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     body {
-  background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
-}
-
+      background: linear-gradient(135deg, #2c3032, #4b5052, #24282a); /* Modifica los colores del degradado para que se parezcan más a la paleta de colores de Team Fortress 2 */
+      margin: 0; /* Elimina el margen predeterminado */
+      padding: 0; /* Elimina el relleno predeterminado */
+    }
     .container {
       width: 80%;
       margin: auto;
       text-align: center;
+      position: relative; /* Establece posición relativa para que la bandera sea absoluta respecto a este contenedor */
     }
-   
     .heavy-container {
       position: relative;
       display: inline-block;
       opacity: 0; 
       transition: opacity 0.35s ease-in-out; 
     }
-
-    
     .container:hover .heavy-container {
       opacity: 1;
     }
-
     .heavy-image {
       width: 50%;
       border-radius: 10px;
     }
-
-    
     .sandw-image {
       width: 20px; 
       border-radius: 10px;
@@ -48,12 +44,20 @@
       transform: translate(-50%, -50%);
       opacity: 0; 
     }
-
-    
     .sandw-image:hover {
       opacity: 1;
     }
-
+    .unionso-image {
+      width: 30px; /* Ajusta el tamaño de la bandera */
+      border-radius: 10px;
+      position: absolute;
+      top: 10px; /* Ajusta la posición vertical de la bandera */
+      right: 10px; /* Ajusta la posición horizontal de la bandera */
+      opacity: 0; 
+    }
+    .unionso-image:hover {
+      opacity: 1;
+    }
     .minigun-text {
       position: absolute;
       bottom: 10px;
@@ -69,21 +73,17 @@
       overflow: hidden; 
       text-overflow: ellipsis; 
       transition: opacity 0.35s ease-in-out;
-
       margin-top: -15px;
       margin-bottom: -15px;
     }
-    .minigun-text p {
-  color: white; 
-  font-family: 'Arial', sans-serif; 
-  font-size: 10px; 
-}
-
-
     .heavy-container:hover .minigun-text {
       opacity: 1;
     }
-
+    .minigun-text p {
+      color: white; 
+      font-family: 'Arial', sans-serif; 
+      font-size: 10px; 
+    }
     .minigun-text span {
       border: 1px solid #000;
       padding: 3px; 
@@ -98,17 +98,17 @@
 <body>
   <div class="container">
     <h1>Heavy de Team Fortress 2</h1>
-   
     <div class="heavy-container">
       <img src="heavy4k..png" alt="Heavy de Team Fortress 2" class="heavy-image">
       <img src="sandw.png" alt="Sandwich de Team Fortress 2" class="sandw-image">
+      <img src="unionso.png" alt="Bandera del Soldier de Team Fortress 2" class="unionso-image">
       <div class="minigun-text">
+       
         <p>Minigun</p>
-        <span>sdgakjfdngoijoidgoaidiouafgaiuhiguivdrfayusfosudfpuiSDGFIOPhsdfuigOISDFHGIO vgfoiuGSUIFHsougfoFiopusgfyusDFIOgsdfuosodfuiboUSVF0UsdfugSDBVU9I</span>
+        <span>Utiliza su minigun para matar y tanquear a su equipo</span>
       </div>
     </div>
-    <p>descripcion aqui asdfjoghapoidfbgaifbgapjf</p>
+    <p>El Heavy es la clase más pesada y posiblemente la más peligrosa de Team Fortress 2, dotado de la más alta resistencia y una Ametralladora muy pesada</p>
   </div>
-
 </body>
 </html>
