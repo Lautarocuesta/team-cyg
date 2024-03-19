@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +11,71 @@
       margin: 0 auto;
       text-align: center;
     }
+
     .slider {
       position: relative;
       overflow: hidden;
       margin: 20px 0;
     }
+
     .slides {
       display: flex;
       transition: transform 0.5s ease;
-      width: 400%; /* Cambiado para permitir más espacio para las diapositivas */
+      width: 400%;
     }
+
     .slide {
-      flex: 0 0 25%; /* Cambiado para dividir el espacio en 4 diapositivas */
-      width: 100%;
-      box-sizing: border-box; /* Agregado para incluir el padding y border en el tamaño del elemento */
-      padding: 0 20px; /* Añadido padding para separar el texto de los bordes */
+      flex: 0 0 25%;
+      width: 80%;
+      height: 20%;
+      padding: 0 20px;
     }
+
     .slide:hover img {
-      transform: scale(1.1); 
-      transition: transform 0.3s ease-in-out; 
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
     }
+
     .slide img {
-      max-width: 100%; /* Cambiado para que la imagen llene el ancho del contenedor */
-      height: auto; /* Cambiado para mantener la proporción de la imagen */
+      max-width: 75%;
+      height: auto;
     }
+
     .brass_text {
-      margin-top: 10px; /* Agregado margen superior para separar el texto de la imagen */
+      margin-top: 10px;
       text-align: left;
     }
-    .prev {
-      left: 4px; 
+
+    .controls {
+      position: relative;
+      margin-top: 10px;
     }
+
+    .control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .prev {
+      left: 0;
+    }
+
     .next {
-     right: 4px; 
+      right: 0;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>miniguns</h1>
@@ -54,17 +84,26 @@
         <div class="slide">
           <img src="minigun.png" alt="Demoman de Team Fortress 2">
           <p>minigun</p>
-          <h1 class="mini_text">esta es la minigun stock, osea no hace nada especial, la vieja confiable si no sabes que poner y solo quieres ir a tirar tiros a lo loco, lo que si no pidas nada en el departamento de precicion, todo lo que este a mas de 30 metros es practicamnte en rango de cosquillas para esto</h1>
+          <h1 class="mini_text">esta es la minigun stock, osea no hace nada especial, la vieja confiable si no sabes que
+            poner y solo quieres ir a tirar tiros a lo loco, lo que si no pidas nada en el departamento de precicion,
+            todo lo que este a mas de 30 metros es practicamnte en rango de cosquillas para esto</h1>
         </div>
         <div class="slide">
           <img src="houlong.png" alt="Demoman de Team Fortress 2">
           <p>hou long hao heater</p>
-          <h1 class="hou_text">esta minigun es coinsiderada como una de las peores (generalmente) ya que consume mas municion por segundo, a cambio de esto genera un anillo de fuego alrededor tuyo ppara los molestos espias que siempre quieren matarte por la espalda, tambien hace daño extra a objetivos que se estan quemando</h1>
+          <h1 class="hou_text">esta minigun es coinsiderada como una de las peores (generalmente) ya que consume mas
+            municion por segundo, a cambio de esto genera un anillo de fuego alrededor tuyo ppara los molestos espias
+            que siempre quieren matarte por la espalda, tambien hace daño extra a objetivos que se estan quemando</h1>
         </div>
         <div class="slide">
           <img src="brass_beast.png" alt="Demoman de Team Fortress 2">
           <p>bestia de laton</p>
-          <h1 class="brass_text">esta minigun es tan forzuda como su apariencia indica, tienes una velocidad de armado reducida(el tiempo que la minigun tarda en calentarse para disparar) pero a cambio mietras estas disparando todo el daño echo hacia ti se reduce en 1/4 y tienes un 20% mas de daño, es coinsiderada una noob trap para muchos por que aunque sean muy buenos los stats, esa reduccion de velocidad es ddebilitante a tal punto que se vuelve inusable en la mayoria de situaciones, aunque en las situaciones en las que si es util, btilla como la estrella polar</h1>
+          <h1 class="brass_text">esta minigun es tan forzuda como su apariencia indica, tienes una velocidad de armado
+            reducida(el tiempo que la minigun tarda en calentarse para disparar) pero a cambio mietras estas disparando
+            todo el daño echo hacia ti se reduce en 1/4 y tienes un 20% mas de daño, es coinsiderada una noob trap para
+            muchos por que aunque sean muy buenos los stats, esa reduccion de velocidad es ddebilitante a tal punto que
+            se vuelve inusable en la mayoria de situaciones, aunque en las situaciones en las que si es util, btilla
+            como la estrella polar</h1>
         </div>
         <div class="slide">
           <img src="tomislav.png" alt="Demoman de Team Fortress 2">
@@ -97,8 +136,8 @@
       index = (index - 1 + slides.length) % slides.length;
       updateSlide();
     }
-   
-    document.addEventListener('keydown', function(event) {
+
+    document.addEventListener('keydown', function (event) {
       if (event.key === 'ArrowLeft') {
         prevSlide();
       } else if (event.key === 'ArrowRight') {
@@ -110,4 +149,5 @@
     prevButton.addEventListener('click', prevSlide);
   </script>
 </body>
+
 </html>
