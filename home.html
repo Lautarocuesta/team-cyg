@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM FORTRES 2</title>
+    <title>TEAM FORTRESS 2</title>
     <style>
-    
-
-    h1#personajes {
+        h1#personajes {
             font-size: 24px; 
             font-weight: bold; 
             margin-bottom: 10px;
+        }
+
+        body {
+            margin: 0; /* Eliminar márgenes predeterminados */
+            padding: 0; /* Eliminar relleno predeterminado */
+            font-family: Arial, sans-serif; /* Fuente predeterminada */
+            background-image: url('j.jpg'); /* Establecer imagen de fondo */
+            background-size: cover; /* Ajustar tamaño de la imagen para cubrir todo el fondo */
+            background-position: center; /* Centrar la imagen de fondo */
         }
 
         .sidebar {
@@ -34,19 +41,22 @@
         .sidebar a:hover {
             background-color: #555; 
         }
+
+        .content {
+            margin-left: 200px; /* Dejar espacio para la barra lateral */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+        }
     </style>
 </head>
 <h1 id="personajes">Personajes</h1>
 <body itemid="body">
     
 
-    
-
     <!-- Barra lateral -->
     <div class="sidebar">
          <p>personajes</p>
         <a href="heavy.html">heavy</a>
-
         <a href="scout.html">scout</a>
         <a href="sniper.html">sniper</a>
         <a href="enginner.html">engineer</a>
@@ -59,10 +69,9 @@
     </div>
 
     
-    <div style="margin-left: 200px; padding: 20px;">
-        <h1>TEAM FORTRES 2</h1>
+    <div class="content">
+        <h1>TEAM FORTRESS 2</h1>
         <p>Team fortress 2 es un shooter multijugador en equipos, muchos dirían que es un hero shooter por su diversa casta de personajes, y mientras que esto pueda ser cierto, no quita...</p>
-      
     </div>
 </body>
 </html>

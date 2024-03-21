@@ -6,16 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>miniguns de heavy</title>
   <style>
+   .title_mini{
+    text-align: center;
+    display: inline-block;
+   }
+
+
     .container {
-      max-width: 800px;
+      width: 700px;
       margin: 0 auto;
       text-align: center;
+      height: auto;
     }
 
     .slider {
       position: relative;
       overflow: hidden;
       margin: 20px 0;
+      width: 1000px;
+      height: auto;
     }
 
     .slides {
@@ -29,23 +38,42 @@
       width: 80%;
       height: 20%;
       padding: 0 20px;
+      display: inline-block;
+
     }
 
     .slide:hover img {
       transform: scale(1.1);
       transition: transform 0.3s ease-in-out;
+      
     }
 
     .slide img {
+      display: inline-block;
       max-width: 75%;
       height: auto;
     }
-
     .brass_text {
       margin-top: 10px;
-      text-align: left;
+     width: 650px;
+     height: 500px;
+      text-align: center;
+      display: inline-block;
     }
-
+    .hou_text {
+      margin-top: 10px;
+     width: 650px;
+     height: 400px;
+      text-align: center;
+      display: inline-block;
+    }
+    .mini_text {
+      margin-top: 10px;
+     width: 650px;
+     height: 400px;
+      text-align: center;
+      display: inline-block;
+    }
     .controls {
       position: relative;
       margin-top: 10px;
@@ -53,7 +81,7 @@
 
     .control {
       position: absolute;
-      top: 50%;
+      top: -600PX;
       transform: translateY(-50%);
       width: 30px;
       height: 30px;
@@ -78,25 +106,25 @@
 
 <body>
   <div class="container">
-    <h1>miniguns</h1>
+    <h1 class="title_mini">miniguns</h1>
     <div class="slider">
       <div class="slides">
         <div class="slide">
-          <img src="minigun.png" alt="Demoman de Team Fortress 2">
+          <img src="minigun.png" class="minigun_img">
           <p>minigun</p>
           <h1 class="mini_text">esta es la minigun stock, osea no hace nada especial, la vieja confiable si no sabes que
             poner y solo quieres ir a tirar tiros a lo loco, lo que si no pidas nada en el departamento de precicion,
             todo lo que este a mas de 30 metros es practicamnte en rango de cosquillas para esto</h1>
         </div>
         <div class="slide">
-          <img src="houlong.png" alt="Demoman de Team Fortress 2">
+          <img src="houlong.png" class="hou_img" >
           <p>hou long hao heater</p>
           <h1 class="hou_text">esta minigun es coinsiderada como una de las peores (generalmente) ya que consume mas
             municion por segundo, a cambio de esto genera un anillo de fuego alrededor tuyo ppara los molestos espias
             que siempre quieren matarte por la espalda, tambien hace daño extra a objetivos que se estan quemando</h1>
         </div>
         <div class="slide">
-          <img src="brass_beast.png" alt="Demoman de Team Fortress 2">
+          <img src="brass_beast.png" class="brass_img">
           <p>bestia de laton</p>
           <h1 class="brass_text">esta minigun es tan forzuda como su apariencia indica, tienes una velocidad de armado
             reducida(el tiempo que la minigun tarda en calentarse para disparar) pero a cambio mietras estas disparando
